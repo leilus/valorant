@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Roboto+Mono:wght@100&">
+<title>Valorant - page </title>
+
+<link rel="icon" type="image/x-icon" href="favicon.png">
+
+
+<div class="lewo" style="background-color:aqua"></div>
+<style>
+
+
+</style>
+
+
+</head>
+
+<body>
+    
+ <div class="valorant"   >
+ <header> 
+<img src="valorant.png" alt="logo"  class="logo" >
+<div class="naglowek">
+<nav>
+    <div class="menu_bar">
+    <ul>
+        <li><a href="stronaglowna.html">Strona Główna</a></li>
+        <div class="dropdown">
+        <button class="dropbtn"><li><a href="#">Postacie</a></li>
+            <i class="fa fa-caret-down"></i>
+        </button>
+       <div class="dropdown-content">
+        <a href="sage.html">Sage</a>
+        <a href="#">Brimstone</a>
+        <a href="#">Chamber</a>
+        <a href="#">Sova</a>
+        <a href="#">Killjoy</a>
+        <a href="#">Reyna</a>
+        <a href="#">Omen </a>
+        <a href="#">Raze</a>
+       </div>     
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"><li><a href="#">Bronie</a></li>
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Vandal</a>
+                <a href="#">Phantom</a>
+                <a href="#">Sheriff</a>
+                <a href="#">Ghost</a>
+                <a href="#">Operator</a>
+                <a href="#">Odin</a>
+
+            </div>
+            </div>
+        <li><a href="kontakt.html">Zaloguj się</a></li>
+    </div>
+    </ul>
+</div>
+</nav>
+
+
+
+
+</div>
+</header> 
+</div>
+
+
+
+
+
+<style>
+
+
+li {
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+
+body {
+    background-color:#e6e6e6 ;
+    height:fit-content;
+}
+.valorant {
+    
+    
+    position: relative;
+  
+    
+    
+}
+header {
+        height: 75px;
+        background-color:#222;
+       position: relative;
+       
+        display: block;
+
+margin: 0 auto;
+   
+        
+        
+   
+       
+}
+
+    .logo {
+        display: block;
+        margin-left: 45px;
+      margin-right:auto;
+        height: 75px;
+        float: left;
+    }
+   
+  
+   nav {
+    float: right;
+    
+   }
+
+   nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   }
+nav li {
+display:inline-block;
+margin: 25px;
+padding-top: 0;
+position: relative;
+
+
+}
+
+nav a {
+    
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 15px;
+text-align: center;
+}
+
+
+
+nav a:hover {
+    color: #ff4454;
+    
+    transition: ease-in 300ms;
+}
+
+
+nav a::before {
+content: "";
+display: block;
+height: 2px;
+width: 100%;
+background-color: #ff4454;
+position: relative;
+top: 0;
+width: 0;
+
+transition:ease-in-out 250ms;
+
+}
+nav a:hover::before {
+    width: 100%;
+}
+
+.naglowek {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.menu_bar{
+    overflow: hidden;
+}
+
+
+.dropdown {
+    
+    display: inline-block;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 10px;
+    border: none;
+    border-width: 1px;
+    outline: none;
+    background-color: #222;
+    margin: 0;
+
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #222;
+}
+.dropdown-content {
+  display: none;
+  width: 80px; /*Tutaj zmieniam, żeby dropdown menu było jedno pod drugim (im mniej tym lepiej)*/
+   margin-left: 20px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px; /* To też jest kluczowe, to jest szerokość bordera*/
+  box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+    top: 75px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  display: inline-block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  width: 108px;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.menu_bar a{
+    float: left;
+    font-size: 16px;
+   
+
+    text-decoration: none;
+}
+.menu_bar ul   {
+   list-style: none;
+   display: flex;
+}
+
+.menu_bar ul li {
+    display: inline-block;
+    margin: 24px;
+    padding: 0px 20px;
+    position: relative;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body::after{
+   
+    content: "";
+    background: url("fade.jpeg");
+    background-size:cover;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+   
+
+}
+
+
+
+.login-box {
+    color:#ddd;
+    border: 5px solid #222;
+    background-color: #222;
+    width: 370px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform:translate(-50%,-50%); /*pojawia sie magicznie box w ustalonym miejscu */
+    font-size: 20px;
+    padding: 70px 20px;
+}
+
+.login-box li {
+
+    list-style-type: none;
+
+
+}
+
+
+.log1 {
+    text-decoration: 2px overline #ff4454;
+    text-align: center;
+    position: relative;
+    top: -20px;
+
+}
+
+
+.log2 {
+position: relative;
+top: 30px;
+padding: 10px;
+
+}
+
+.login-box .haslo {
+
+    color:#ddd;
+    text-decoration: none; 
+    font-family: 'Roboto Mono';
+    font-size: 15px;
+    position: relative;
+    padding: 10px;
+    padding-bottom: 10px;
+    top: 130px;
+    margin: 0;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.login-box .haslo:hover {
+
+    color:#ff4454;
+    font-family: 'Roboto Mono';
+    cursor: pointer;
+    
+    
+   
+}
+.login-box .haslo::before {
+content: "";
+display: block;
+height: 2px;
+width: 0;
+background-color: #ff4454;
+transition: ease-in 300ms;
+position: relative;
+top: 0;
+text-decoration: none; 
+
+
+}
+
+.login-box .haslo:hover::before {
+
+    width: 100%;
+    
+}
+
+
+.login-box input[type="text"], input[type="password"] {
+    color: #ddd;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ff4454;
+    outline: none;
+    height: 40px;
+    font-family: 'Roboto Mono', 'monospace';
+    font-size: 15px;
+
+}
+
+.login-box input[type="submit"] {
+
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color:#ddd;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: 'Roboto Mono', 'monospace';
+  
+
+}
+
+.login-box input {
+
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.riot {
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 420px;
+    left: calc(50% - 60px);
+}
+
+.login-box input[type="text"]:hover, input[type="password"]:hover {
+    background-color: #1a1a1a;
+    position: relative;
+  
+}
+
+.login-box input[type="text"]:active, input[type="password"]:active{
+    background-color: #1a1a1a;
+    position: relative;
+}
+
+.login-box input[type="submit"]:hover{
+    background-color: #bfbfbf;
+    cursor: pointer;
+
+}
+
+.login-box .haslo:visited{
+    text-decoration: none; 
+}
+
+
+.login-box a {
+    text-decoration: none; 
+    color:#ddd;
+}
+
+
+</style>
+
+
+
+
+</style>
+
+
+
+
+</div>
+
+<div class="login-box">
+ 
+<li class="log1">Zaloguj się</li>
+<div class="log2">
+<li>E-mail lub login</li>
+<input type="text" name="" placeholder="Login lub e-mail">
+<li>Hasło</li>
+<input type="password" name="" placeholder="Hasło">
+
+<input type="submit" name="" value="Zaloguj się">
+<button class="haslo"><a href="#">Zapomniałeś hasła?</a></button>
+<button class="haslo"><a href="rejestracja.html">Zarejestruj się</a></button>
+    
+<img class="riot" src="riot.png">
+</div>
+
+
+
+
+
+
+
+
+</div>
+</body>
+
+</html>

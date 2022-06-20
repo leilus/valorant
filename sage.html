@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Roboto+Mono:wght@100&">
+<title>Valorant - page </title>
+
+<link rel="icon" type="image/x-icon" href="favicon.png">
+
+
+<div class="lewo" style="background-color:aqua"></div>
+<style>
+
+
+</style>
+
+
+</head>
+
+<body>
+    
+ <div class="valorant"   >
+ <header> 
+<img src="valorant.png" alt="logo"  class="logo" >
+<div class="naglowek">
+<nav>
+    <div class="menu_bar">
+    <ul>
+        <li><a href="stronaglowna.html">Strona Główna</a></li>
+        <div class="dropdown">
+        <button class="dropbtn"><li><a href="#">Postacie</a></li>
+            <i class="fa fa-caret-down"></i>
+        </button>
+       <div class="dropdown-content">
+        <a href="sage.html">Sage</a>
+        <a href="#">Brimstone</a>
+        <a href="#">Chamber</a>
+        <a href="#">Sova</a>
+        <a href="#">Killjoy</a>
+        <a href="#">Reyna</a>
+        <a href="#">Omen </a>
+        <a href="#">Raze</a>
+       </div>     
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"><li><a href="#">Bronie</a></li>
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Vandal</a>
+                <a href="#">Phantom</a>
+                <a href="#">Sheriff</a>
+                <a href="#">Ghost</a>
+                <a href="#">Operator</a>
+                <a href="#">Odin</a>
+
+            </div>
+            </div>
+        <li><a href="kontakt.html">Zaloguj się</a></li>
+    </div>
+    </ul>
+</div>
+</nav>
+
+
+
+
+</div>
+</header> 
+</div>
+
+
+
+
+
+<style>
+
+
+li {
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+
+body {
+    background-color:#e6e6e6 ;
+    height:fit-content;
+}
+.valorant {
+    width: 100%;
+    margin: auto;
+    
+}
+header {
+        height: 75px;
+        background-color:#222;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+   
+       
+        
+    }
+
+    .logo {
+        display: block;
+        margin-left: 45px;
+      
+        height: 75px;
+        float: left;
+    }
+   
+  
+   nav {
+    float: right;
+    
+   }
+
+   nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   }
+nav li {
+display:inline-block;
+margin: 25px;
+padding-top: 0;
+position: relative;
+
+
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 15px;
+text-align: center;
+}
+
+
+
+nav a:hover {
+    color: #ff4454;
+    
+    transition: ease-in 300ms;
+}
+
+
+nav a::before {
+content: "";
+display: block;
+height: 2px;
+width: 100%;
+background-color: #ff4454;
+position: relative;
+top: 0;
+width: 0;
+
+transition:ease-in-out 250ms;
+
+}
+nav a:hover::before {
+    width: 100%;
+}
+
+.naglowek {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.menu_bar{
+    overflow: hidden;
+}
+
+
+.dropdown {
+    
+    display: inline-block;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 10px;
+    border: none;
+    border-width: 1px;
+    outline: none;
+    background-color: #222;
+    margin: 0;
+
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #222;
+
+}
+.dropdown-content a {
+  float: none;
+  display: inline-block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  width: 108px;
+  
+}
+
+.naglowek {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.menu_bar{
+    overflow: hidden;
+}
+
+
+.dropdown {
+    
+    display: inline-block;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 10px;
+    border: none;
+    border-width: 1px;
+    outline: none;
+    background-color: #222;
+    margin: 0;
+
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #222;
+}
+.dropdown-content { /*Tutaj powodujemy, ze okienko znika, a gdy dodamy :hover okienko sie pojawia */
+ display: none;
+  width: 70px; /*Tutaj zmieniam, żeby dropdown menu było jedno pod drugim (im mniej tym lepiej)*/
+   margin-left: 20px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px; /* To też jest kluczowe, to jest szerokość bordera*/
+  box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+ 
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  display: inline-block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  width: 108px;
+  
+}
+
+.dropdown:hover .dropdown-content { /*Tutaj uaktywniamy block, gdzie pokazuje okienko po najechaniu myszka */
+  display: block;
+}
+.menu_bar a{
+    float: left;
+    font-size: 16px;
+   
+
+    text-decoration: none;
+}
+.menu_bar ul   {
+   list-style: none;
+   display: flex;
+}
+
+.menu_bar ul li {
+    display: inline-block;
+    margin: 24px;
+    padding: 0px 20px;
+    position: relative;
+}
+
+
+
+
+</style>
+
+
+
+
+</style>
+
+</div> 
+
+
+
+
+
+
+
+</div class="container">
+
+
+<div class="sage">
+    <img style="width: 550px;"src="sage.png">
+</div>
+<h1 class="nagloweksage">SAGE</h1>
+<div class="historiasage">
+<span class="text1">Istna chińska twierdza. <strong><span style="color:#239faf;">Sage</span></strong> sprawia, że zarówno ona, jak i jej drużyna mogą czuć się bezpiecznie w każdym miejscu. Potrafi wskrzeszać poległych towarzyszy i odpierać agresywne ataki, co czyni z niej ostoję spokoju podczas każdej piekielnej walki.</span>
+</div>
+<h1 class="naglowekability">UMIEJĘTNOŚCI</h1>
+<div class="umiejetnosci">
+ <div class="bariera">
+<img class="ability" src="bariera.png"> 
+<p class="tresc">Bariera</p>
+</div>
+<div class="heal">
+<img class="ability" src="heal.png">
+<p class="tresc">Leczenie</p>
+</div>
+<div class="slow">
+<img class="ability" src="slow.png">
+<p class="tresc">Spowolnenie</p>
+</div>
+<div class="ult">
+<img class="ability"  src="ult.png">
+<p class="tresc">Specjalna umiejętność</p>
+</div>
+</div>
+
+
+<style>
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+.naglowekability {
+    text-align: center;
+    font-family: 'Roboto Mono';
+    position: relative;
+    top: 80px;
+}
+
+
+.historiasage{
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    animation: fadeInRight 1s ease-in-out;
+    text-align: center;
+
+
+  }
+
+
+   .sage{
+    margin-top: 0;
+    height: 700px;
+    float: left;
+    animation: fadeInTop 1s ease-in-out;
+    animation-timing-function: 1;
+   } 
+
+   
+  .nagloweksage {
+    text-align: center;
+    font-family: 'Roboto Mono';
+    position: relative;
+    
+   
+  }
+
+  .umiejetnosci {
+    
+    position: relative;
+  height: 100px; 
+   
+    padding: 0px;
+    text-align: center;
+    animation: fadeInTop 1s ease-in-out;
+    animation-timing-function: 1;
+    top: 120px;
+  }
+
+.ability {
+    display: flex;
+    border: 2px solid black;
+    padding: 0px;
+    display:inline-block;
+    
+    margin-left: 1px;
+    margin-right: 2px;
+    border-radius: 20%;
+ height: 170px;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
+.ability:hover {
+    background-color: #239faf;
+}
+  .ability:active {
+    background-color: black;
+  }
+
+.bariera {
+    display: inline-block;
+    
+}
+
+.heal {
+    display:inline-block;
+   
+}
+
+.slow {
+    display: inline-block;
+}
+
+.ult {
+  
+    display: inline-block;
+}
+
+.tresc {
+    font-family: 'Roboto Mono';
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.bariera:hover .tresc {
+    
+    visibility: visible;
+    opacity: 1;
+}
+
+.heal:hover .tresc {
+    visibility: visible;
+    opacity: 1;
+}
+.slow:hover .tresc {
+    visibility: visible;
+    opacity: 1;
+}
+.ult:hover .tresc {
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes fadeInRight {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+    to {
+    opacity: 1; }
+}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+</style>
+
+
+
+
+
+
+
+</body>
+
+</html>
